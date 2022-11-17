@@ -12,9 +12,9 @@
         <div class="container">
             <div class="awards">AWARDS</div>
             <div class="about">
-              <div class="spaceR">ABOUT US</div>
+              <div>ABOUT US</div>
               <div>CONTACT</div>
-              <div class="spaceL">OUR COMPETIONS</div>
+              <div>OUR COMPETIONS</div>
             </div>
             <div class="entry">SIGN IN / SIGN UP</div>
         </div>
@@ -35,15 +35,99 @@
                 </div>
             </div>
             <div class="image">
-                <img src="tree.PNG" alt="tree picture" height="300" width="180">;
+                <img src="tree.PNG" alt="tree picture" height="300" width="200">;
             </div>
         </div>
         <div class="parentbox">
             <div class="childbox">
+              <form>
                 <div class="identity">
-                    
-
+                  <div class="formhead">Fill the Application</div>
+                  <div><input type="text" id="full-name" name="fullname" placeholder="Full Name" required></div>
+                  <div><input type="email" id="email" name="email" placeholder="Enter Email Address"></div>
+                  <div><input type="tel" id="phone" name="phone" placeholder="Phone Number"></div>
+                  <div><input type="text" id="Address" name="Address" placeholder="Street Address"></div>
+                  <div><input type="text" id="empty" name="empty"></div>
+                  <div class="selection">
+                    <div> 
+                      <select name="city" id="city">
+                        <option value="city">City</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                      </select>
+                    </div>
+                    <div>
+                      <select name="state" id="state">
+                        <option value="state">State</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Tamilnadu">Tamilnadu</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Telangana">Telangana</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="select-country">
+                    <div>
+                      <select name="country" id="country">
+                        <option value="country">Country</option>
+                        <option value="India">India</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Singapore">singapore</option>
+                        <option value="Germany">Germany</option>
+                      </select>  
+                    </div>
+                    <div>
+                      <input type="text" id="zipcode" placeholder="Zip Code">
+                    </div>
+                  </div>
+                  <div class="icon">
+                    <input type="radio"  name="gender" id="male" checked>
+                    <label for="male" class="icon-size">Male</label>
+                    <input type="radio" name="gender" id="Female">
+                    <label for="female" class="icon-size">Female</label>
+                  </div>
                 </div>
+                <div class="form-half">
+                  <div class="explanation">
+                    <label for="Description">Description</label>
+                  </div>
+                  <div>
+                    <textarea name="description" class="explanation-area"></textarea>
+                  </div>
+                  <div>
+                    <select name="photo-contest" id="photo">
+                      <option value="contest">Photo Contest Category</option>
+                      <option value="nature">Art of Nature</option>
+                      <option value="aquatic">Aquatic Life</option>
+                      <option value="wild">Wild Life</option>
+                    </select>  
+                  </div>
+                  <div class="payment">
+                    <label for="payment">Payment Option</label>
+                  </div>
+                  <div>
+                    <input type="text" id="card" name="card" placeholder="Name on Card*">
+                  </div>
+                  <div>
+                    <input type="text" id="credit" name="credit" placeholder="Credit Card*">
+                  </div>
+                  <div class="terms">
+                    <label for="terms" class="conditions">Terms and Conditions</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="checkbox" id="accept" checked />
+                    <label for="agree" class="agreement">I Agree</label>
+                  </div>
+                  <div>
+                    <input type="button"class="register" id="submit" value="Submit">
+                  </div>
+                  <div>
+                    <input type="button"class="register" id="cancel" value="Cancel"/>
+                  </div>
+                </div>
+              </form>  
             </div>
         </div>
     </div>

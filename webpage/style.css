@@ -2,6 +2,10 @@
     box-sizing: border-box;
     
  }
+ html
+ {
+   font-size: 10px;
+ }
  body
  {
    background-color: black;
@@ -11,45 +15,38 @@
 .parent
  {
     font-family: 'Roboto', sans-serif;
-   /* display: flex;
-   flex-direction: column;
-   justify-content: space-between; */
+   
  } 
  .container
  {
     display: flex; 
     justify-content: space-between;
     margin-top:30px;
-    margin-left: 20px;
-    margin-right: 20px; 
+    margin-left: 50px;
+    margin-right: 50px; 
  }
  .awards
  {
     color: white;
-    font-size: 40px;
+    font-size: 4rem;
     cursor:pointer;
  }
  .about
  {
     color: white;
-    font-size: 15px;
+    font-size: 1.5rem;
     cursor:pointer;
+    width: 50%;
     display: flex;
- }
- .spaceR
- {
-    padding-right:40px ;
- }
- .spaceL
- {
-    padding-left: 40px;
+    justify-content: space-between;
+ 
  }
 
 
 .entry
 {
     color: white;
-    font-size: 25px;
+    font-size: 2rem;
     cursor:pointer;
     font-style: italic;
     
@@ -58,18 +55,15 @@
 {
   display:flex;
   justify-content:space-between;
+  margin-left: 50px;
+  margin-right: 50px; 
 }
 .content
 {
     color: white;
-    margin-top: 100px;
-    margin-left: 20px;
-    /* margin-bottom: 100px;
-   position: relative;
-    left: 20px;
-    top: 100px;
-    bottom: 100px;*/
+    margin-top: 150px;
     max-width:40%;
+    font-size: 1.5rem;
 }
 .click
 {
@@ -79,29 +73,178 @@
 }
 .image
 {
-  /*
+  
   overflow: hidden;
-  border-radius: 30px;*/
-  margin-right: 50px;
+  border-radius: 30px;
   margin-top: 100px;
-
 }
 .parentbox
 {
-    height: 600px;
+   /* height: 60rem;*/
     width: 100%;
-    background-color: rgb(49, 47, 47);
-    position: relative;
-    top: 200px;
+    margin-top: 100px;
+    background-color:rgba(35,35,35,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .childbox
 {
-    height: 520px;
-    width:94%;
-    background-color: rgb(94, 89, 89);
-    position: absolute;
-    top: 50px;
-    left: 40px;
+   /* height: 52.8rem;*/
+    width:90%;
+    background-color:rgba(46,46,46,255);
+    
+    
 }
+.identity
+{
+   
+   color: white;
+   margin-left: 80px;
+   margin-top: 60px;
+   margin-bottom:50px;
+   width: 50%;
+}
+.formhead
+{
+ font-size: 2rem;
+ margin-bottom: 30px;
+   
+}
+input[type="text"]
+{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+  padding-top:30px;
+   
+} 
+#empty
+{
+ 
+   padding-bottom: 10px;
+   padding-top:10px;
+}
+
+::placeholder
+{
+   font-size: 1.5rem;
+}
+.selection
+{
+   width:40%;
+  display:flex;
+  justify-content: space-between;
+}
+#city
+{
+   background-color:transparent;
+   border: none;
+   border-bottom: 1px solid white;
+   margin-top:30px;
+   color: white;
+    
+}
+#state
+{
+   background-color:transparent;
+   border: none;
+   border-bottom: 1px solid white;
+   margin-top:30px;
+   color: white;
+}
+.select-country
+{
+   display:flex;
+  justify-content:flex-start;
+}
+#country
+{
+   background-color:transparent;
+   border: none;
+   border-bottom: 1px solid white;
+   margin-top:30px;
+   color: white;  
+}
+#zipcode
+{
+   padding-bottom: 0;
+}
+.icon
+{
+  margin-top: 30px; 
+}
+.icon-size
+{
+ font-size: 1.5rem;  
+}
+input[type="radio"] 
+{
+   accent-color: white;
+}
+.explanation
+{
+   background-color:transparent;
+   color: white;
+   font-size: 1.5rem; 
+}
+.explanation-area
+{
+ width: 25%;
+ height: 100px;
+ border-radius: 15px;
+ margin-top: 20px;
+ background-color:transparent;
+}
+#photo
+{
+   background-color:transparent;
+   border: none;
+   border-bottom: 1px solid white;
+   margin-top:30px;
+   color: white;  
+}
+.payment
+{
+   background-color:transparent;
+   color: white;
+   font-size: 1.5rem;
+   margin-top: 40px; 
+}
+.conditions
+{
+   background-color:transparent;
+   color: rgb(7, 125, 194);
+   font-size: 1.5rem; 
+   
+}
+.terms
+{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.agreement
+{
+   background-color:transparent;
+   color: white;
+   font-size: 1.5rem; 
+}
+input[type="checkbox"] 
+{
+   accent-color: rgb(4, 8, 5);
+}/*
+.register
+{
+   background-color: rgba(86, 179, 95, 1);
+   color: rgba(241, 241, 241, 1);
+   width: 20%;
+   height: 3rem;
+   border: none;
+   cursor: pointer;
+   border-radius: 10px;
+ }*/
+
+
     
 
