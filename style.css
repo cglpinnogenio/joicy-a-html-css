@@ -7,27 +7,33 @@
    font-size: 62.5%;
    
  }
+ @font-face
+ {
+   font-family:inter;
+   src:url(./font/Inter/static/Inter-Regular.ttf)
+ }
+
  body
  { 
    margin: 0; 
    background-color: black;
-   
  }
  
 .parent-container
  {
     
-  /*min-width: 1200px; */ width: 100%;
-        
-    
- }   
+   width: 100%;
+   max-width:1500px;      
+}
+
  .nav-container
  {
    width: 100%;  
    display: flex;
    justify-content: space-between;
+   align-items: baseline;
    flex-wrap: wrap;
-   padding:4rem;
+   padding:2rem; 
    position: fixed;
    background-color:black;
 }
@@ -37,9 +43,10 @@
  width: 50%;
  display:flex ;
  justify-content:space-between;
+ align-items:flex-end; 
  flex-wrap: wrap;
- font-family:Arsenal;
- font-size: 2.5rem;
+ font-family:inter;
+ font-size: 2rem;
  font-weight: 400;
 }
 a
@@ -49,9 +56,10 @@ a
 }
 .award
 {
- font-family:Arsenal ;
- font-size: 4rem;
+ font-family:inter;
+ font-size: 3.5rem;
  font-weight: 400;
+ 
 }
 .hover-effect:hover
 {
@@ -76,8 +84,8 @@ a
 }
 .invite
 {
-   font-family:Inter;
-  font-size: 3.8rem;
+  font-family:Inter;
+  font-size: 3rem;
   font-weight: 600;
 }
 .content
@@ -90,13 +98,13 @@ a
 {  margin-top: 60px;
    margin-bottom: 60px;
    font-family:Inter;
-   font-size: 1.8rem;
+   font-size: 1.5rem;
    font-weight: 300;
 }
 .click
 { 
    font-family:Inter;
-   font-size: 1.8rem;
+   font-size: 1.5rem;
    font-weight: 300;
    cursor:pointer; 
    color:white;
@@ -110,44 +118,39 @@ a
 }
 .parentbox
 {
-   
-  width: 100%;  
+   background-color:rgba(35,35,35,.5);
+   width: 100%;  
    margin-top:100px;
    padding:40px; 
-   background-image: url(/asset/camera.svg);
-   background-position: center;
-   background-repeat: no-repeat;
+   min-width: 500px;  
    
 }
 .childbox
-{
-    width:100%;    
-    background-color:rgba(46,46,46,.5);   
-    display:flex;
-    justify-content:flex-start; 
-    flex-wrap: wrap;
-    height: fit-content;
-    /* padding-top: 3rem;
-    padding-bottom: 4rem; */
-}
+{  
+   display:flex;
+   justify-content:space-around; 
+   flex-wrap: wrap;
+   background-image: url(/asset/camera.svg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-image: cover;
+} 
  .textfield-length
 {
   width: 60%;
 } 
  .first-half
 {
-  width:50%;
-  min-width:40rem; 
-   padding-left: 10rem; 
-    
+  flex-grow: 1; 
+  flex-basis: 50%;
+  border-right: 1px solid white;
+  padding-left:6rem;
 }
  .second-half
-   {  
-   width:50%; 
-   min-width:40rem;
-   border-left: 1px solid white;
-   padding-left: 4rem;
-   
+{  
+  flex-grow: 1;
+  flex-basis: 50%;
+  padding-left: 4rem;
 }  
 .formhead
 {
@@ -163,7 +166,12 @@ a
   border: none;
   border-bottom: 1px solid white;
   padding-bottom: 10px;
-  padding-top:30px;  
+  padding-top:30px;
+  color: white;
+}
+input:focus,textarea:focus
+{
+  outline: none;
 }  
  
 #empty-field
@@ -171,7 +179,7 @@ a
  
    padding-bottom: 10px;
    padding-top:10px;
-   width:50%;
+   width:40%;
 }
 
 ::placeholder
@@ -193,8 +201,7 @@ a
    margin-top:30px;
    color:rgb(161, 159, 156);
    margin-right: 3rem;
-   
-   
+   width:15rem;
 }
 #state
 {
@@ -203,7 +210,7 @@ a
    border-bottom: 1px solid white;
    margin-top:30px;
    color: rgb(161, 159, 156);
-   
+   width: 6rem;
 }
 #Address
 {
@@ -211,7 +218,7 @@ a
 }
 .select-country
 { 
-   display:flex;
+  display:flex;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
@@ -223,18 +230,19 @@ a
    margin-top:30px;
    color: rgb(161, 159, 156);
    margin-right: 3rem;
-  
+   width: 15rem;
 }
 #zipcode
 {
    padding-bottom: 0;
-   width: 70px;
+   width:7rem;
 }
  .option-colour
 {
  color: white;
  background-color:rgb(53, 52, 52);
 } 
+
 
 .icon
 {
@@ -264,6 +272,7 @@ input[type="radio"]
  margin-top: 20px;
  background-color:transparent;
  resize: none;
+ color: white;
 }
  #photo
 {
