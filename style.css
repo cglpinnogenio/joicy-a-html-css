@@ -1,0 +1,367 @@
+ *{
+    box-sizing: border-box;
+    
+ } 
+ html
+ {
+   font-size: 62.5%;
+   font-family: inter;
+ }
+ @font-face
+ {
+   font-family:inter;
+   src:url(./asset/font/Inter-VariableFont_slnt\,wght.ttf)
+ }
+ @font-face {
+   font-family: roboto;
+   src: url(./asset/font/Roboto-Regular.ttf);
+ }
+ @font-face {
+   font-family: arsenal;
+   src: url(./asset/font/Arsenal-Regular.ttf);
+ }
+body
+{ 
+   margin: 0; 
+   background-color: black;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+}
+ .parent-container
+ {
+   width: 100%; 
+   max-width:1500px;
+ }  
+.nav-container
+{ 
+   width: 100%;
+   max-width: 1500px; 
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+   flex-wrap: wrap; 
+   padding-top: 2rem;
+   padding-right: 3rem;
+   padding-left: 3rem; 
+   position: fixed; 
+   background-color:black;
+}
+.nav-middile
+{
+ display:flex ;
+ gap:6rem;
+ align-self:baseline; 
+ flex-wrap: wrap; 
+ font-family:roboto;
+ font-size: 2rem;
+ font-weight: 400;
+}
+a
+{
+   text-decoration: none;
+   color:white;
+}
+.award{
+    
+ font-size: 3.5rem;
+ font-family: arsenal;
+}
+.hover-text:hover
+{
+   font-weight: 700;
+}
+.signin-container
+{
+ font-size: 2.5rem;
+ font-style: italic;
+ font-weight: 400;
+}   
+.details
+{
+  display:flex;
+  justify-content:space-between;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  align-items: center; 
+  flex-wrap: wrap;
+  padding-top:15rem;
+  padding-bottom: 5rem;
+}
+.invite
+{
+  font-size: 4rem;
+  font-weight: 600;
+}
+.content
+{
+    color: white;
+    flex-basis:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.description
+ { 
+   padding-top: 6rem;
+   padding-bottom: 6rem; 
+   font-family:Inter; 
+   font-size: 1.5rem;
+   font-weight: 300;
+}
+.click
+{ 
+   font-size: 2rem;
+   cursor:pointer; 
+   color:white;
+   text-decoration: underline;
+}
+.image
+{
+  border-radius: 30px;
+  height:459px;
+  width:318px; 
+}
+.parentbox
+{
+   background-color:rgba(29, 27, 27, 0.8);
+   width: 100%;  
+   padding-right: 4rem;
+   padding-left: 4rem;
+   padding-top: 6rem;
+   padding-bottom: 5rem;
+   min-width: 500px;
+   margin-top: 5rem;
+   
+}
+.childbox
+{  
+   display:flex;
+   justify-content:space-around; 
+   flex-wrap: wrap;
+   background-image: url(/asset/image/camera.svg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-image: cover;
+} 
+.textfield-length
+{
+  min-width: 60%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+  padding-top:30px;
+  color: white;
+} 
+ .form-primary
+{
+  flex-grow: 1; 
+  flex-basis: 50%;
+  border-right: 1px solid rgb(85, 84, 84);
+  padding-left:6rem;
+}
+ .form-secondary
+{  
+  flex-grow: 1;
+  flex-basis: 50%;
+  padding-left: 4rem;
+}  
+.formhead
+{
+ font-size: 2rem;
+ margin-top: 3rem;
+ margin-bottom: 20px;
+ color: rgb(161, 159, 156);
+}
+input:focus,textarea:focus
+{
+  outline: none;
+}  
+#empty-field
+{
+   background-color: transparent;
+   border: none;
+   border-bottom: 1px solid white;
+   color: white;
+   padding-bottom: 10px;
+   padding-top:10px;
+   width:40%;
+}
+
+::placeholder
+{
+   font-size: 1.5rem;
+   font-family: roboto;
+}
+.selection
+{
+  
+  display:flex;
+  justify-content:flex-start;
+  flex-wrap: wrap;
+}
+#city
+{
+   background-color:transparent;
+   border: none;
+   border-bottom: 1px solid white;
+   margin-top:4rem; 
+   color:rgb(161, 159, 156);
+   margin-right: 3rem;
+   width:15rem;
+   outline: none;
+}
+#state
+{
+   background-color:transparent;
+   border: none;
+   border-bottom: 1px solid white;
+   margin-top:30px;
+   color: rgb(161, 159, 156);
+   width: 6rem;
+   outline: none;
+}
+#Address
+{
+  width: 58%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+  padding-top:30px;
+  color: white;
+}
+.select-country
+{ 
+  display:flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+#country
+{
+   background-color:transparent;
+   border: none;
+   border-bottom: 1px solid white;
+   margin-top:4rem;
+   color: rgb(161, 159, 156);
+   margin-right: 3rem;
+   width: 15rem;
+   outline: none;
+}
+#zipcode
+{
+   width:8rem;
+   background-color: transparent;
+   border: none;
+   border-bottom: 1px solid white;
+   padding-top:30px;
+   color: white;
+}
+input[type="number"]::-webkit-outer-spin-button,
+
+input[type="number"]::-webkit-inner-spin-button
+ {
+  -webkit-appearance: none;
+ }
+ .option-colour
+{
+ color: white;
+ background-color:rgb(53, 52, 52);
+} 
+.icon
+{
+  margin-top: 4rem;
+  color:rgb(161, 159, 156);
+  font-size: 1.5rem; 
+  
+}
+input[type="radio"] 
+{
+   accent-color: white;
+}
+.explanation
+{
+   background-color:transparent;
+   color:rgb(161, 159, 156);
+   font-size:1.5rem;
+   margin-top: 2rem; 
+}
+.explanation-area
+{
+ width:55%;
+ height: 15vh;
+ border-radius: 15px;
+ margin-top: 20px;
+ background-color:rgba(51,51,51,1);
+ resize: none;
+ color: white;
+}
+ #photo
+{
+   background-color:transparent;
+   border: none;
+   border-bottom: 1px solid white;
+   margin-top:30px;
+   color: rgb(161, 159, 156);
+   outline: none;  
+} 
+.payment
+{
+   background-color:transparent;
+   color: rgb(161, 159, 156);
+   font-size: 1.5rem;
+   margin-top: 40px;
+    
+}
+.conditions
+{
+   background-color:transparent;
+   color: rgb(7, 125, 194);
+   font-size: 1.5rem; 
+   
+}
+.terms
+{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.agreement
+{
+   background-color:transparent;
+   color: rgb(161, 159, 156);
+   font-size: 1.5rem; 
+}
+input[type="checkbox"] 
+{
+   accent-color: rgb(4, 8, 5);
+}
+#submit
+{
+   background-color: rgba(86, 179, 95, 1);
+   color: rgba(241, 241, 241, 1);
+   cursor: pointer;
+   border-radius: 10px;
+   height: 3rem; 
+   margin-top: 2rem;
+   text-align: center;
+   margin-right: 1rem;
+   margin-bottom: 4rem;
+   width: 35%;
+   border: none;
+}
+#cancel
+{
+   background-color: rgb(9, 12, 9);
+   color: rgba(241, 241, 241, 1);
+   cursor: pointer;
+   border-radius: 10px;
+   height: 3rem; 
+   margin-top: 2rem;
+   text-align: center;
+   width: 35%;
+   border: 1px solid white;
+}
+
+    
+
